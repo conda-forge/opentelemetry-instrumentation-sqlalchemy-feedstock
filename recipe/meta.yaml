@@ -27,11 +27,8 @@ requirements:
     - wrapt >=1.11.2
     # - sqlalchemy 
     # - pytest 
-    # - opentelemetry-sdk ~=1.3
-    # - sqlalchemy 
-    # - pytest 
-    # - packaging >=21.0
-    # - opentelemetry-sdk ~=1.3
+    - packaging >=21.0
+    - opentelemetry-sdk ~=1.3
 
 test:
   imports:
