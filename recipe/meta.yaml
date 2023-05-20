@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-sqlalchemy" %}
-{% set version = "0.38b0" %}
+{% set version = "0.39b0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_sqlalchemy-{{ version }}.tar.gz
-  sha256: 3d8a5b6fdc96419f776c1f4a150764b978cca5b44825053833652147a8cba8d6
+  sha256: 0d4916b59af0c5a5ce0608a470f387359bf32e01bb774bd0b849dd668a37eb2b
 
 build:
   noarch: python
@@ -22,10 +22,14 @@ requirements:
   run:
     - python >=3.7
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation ==0.38b0
-    - opentelemetry-semantic-conventions ==0.38b0
+    - opentelemetry-instrumentation ==0.39b0
+    - opentelemetry-semantic-conventions ==0.39b0
     - packaging >=21.0
     - wrapt >=1.11.2
+    # - sqlalchemy 
+    # - pytest 
+    # - opentelemetry-sdk ~=1.12
+    # - opentelemetry-instrumentation-sqlalchemy 
     # - sqlalchemy 
     # - pytest 
     # - opentelemetry-sdk ~=1.12
